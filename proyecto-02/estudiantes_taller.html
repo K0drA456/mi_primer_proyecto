@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes Taller Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header-tallerweb">
+        <h1>Lista de Estudiantes </h1>
+        <div class="box">
+            <div class="maestro">
+                <h2>Curso: Taller Web</h2>
+                <h2>Docente: Lic. María</h2>
+                <div class="help"><a href="index.html" class="buton">Volver a cursos</a></div>
+            </div>
+        </div>
+        <div class="estudiantes-container">
+            <estudiante-card nombre="Ervin Zabala" edad="18" imagen="img/hombre.png"></estudiante-card>
+            <estudiante-card nombre="Danna García" edad="19" imagen="img/nina (3).png"></estudiante-card>
+    
+            <estudiante-card nombre="Nestor Torrico" edad="18" imagen="img/hombre-joven (2).png"></estudiante-card>
+            <estudiante-card nombre="Ana Rivera" edad="21" imagen="img/mujer (2).png"></estudiante-card>
+    
+            <estudiante-card nombre="Jimmy Vacadiez" edad="21" imagen="img/hombre-joven (1).png"></estudiante-card>
+            <estudiante-card nombre="Luciana Espinoza" edad="19" imagen="img/mujer-joven (1).png"></estudiante-card>
+    
+            <estudiante-card nombre="Diego Rojas" edad="23" imagen="img/avatar-de-hombre.png"></estudiante-card>
+            <estudiante-card nombre="Claudia Cueto" edad="19" imagen="img/estudiante (1).png"></estudiante-card>
+        </div>
+
+        <div class="buttons-container">
+            <button id="guardar-btn">Guardar</button>
+            <button id="editar-btn" style="display: none;">Editar</button>
+        </div>
+    </div>
+
+
+
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="new">Resumen de Asistencia</h2>
+            <p id="total-alumnos"></p>
+            <p id="alumnos-presentes" class="verde"></p>
+            <p id="alumnos-ausentes" class="rojo"></p>
+            <p id="alumnos-licencia" class="azul"></p>
+        </div>
+    </div>
+
+
+    <script src="componentes/Estudiantes.js"></script>
+    <script src="componentes/guardado.js"></script>
+    <script src="componentes/modal.js"></script>
+</body>
+</html>

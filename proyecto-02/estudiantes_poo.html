@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header-poo">
+        <h1>Lista de Estudiantes</h1>
+        <div class="box">
+            <div class="maestro">
+                <h2>Curso: POO</h2>
+                <h2>Docente: Lic. Juan</h2>
+                <div class="help"><a href="index.html" class="buton">Volver a cursos</a></div>
+            </div>
+        </div>
+        <div class="estudiantes-container">
+            <estudiante-card nombre="Edgar Zambrana" edad="20" imagen="img/hombre-joven (1).png"></estudiante-card>
+            <estudiante-card nombre="Yuliana Ávila" edad="24" imagen="img/mujer.png"></estudiante-card>
+
+            <estudiante-card nombre="José Chavez" edad="19" imagen="img/chico (2).png"></estudiante-card>
+            <estudiante-card nombre="Lucia Hinojosa" edad="22" imagen="img/mujer (1).png"></estudiante-card>
+
+            <estudiante-card nombre="Pedro Gomez" edad="20" imagen="img/hombre (2).png"></estudiante-card>
+            <estudiante-card nombre="Emanuel Vaca" edad="21" imagen="img/mujeres (3).png"></estudiante-card>
+
+            <estudiante-card nombre="Lider Ortiz" edad="20" imagen="img/hombre (1).png"></estudiante-card>
+            <estudiante-card nombre="Nathaly Veizaga" edad="18" imagen="img/mujeres.png"></estudiante-card>
+
+            <estudiante-card nombre="Sebastian Hurtado" edad="24" imagen="img/nino (1).png"></estudiante-card>
+            <estudiante-card nombre="Yisel Ferrufino" edad="18" imagen="img/nina (2).png"></estudiante-card>
+        </div>
+
+        <div class="buttons-container">
+            <button id="guardar-btn">Guardar</button>
+            <button id="editar-btn" style="display: none;">Editar</button>
+        </div>
+    </div>
+
+
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="new">Resumen de Asistencia</h2>
+            <p id="total-alumnos"></p>
+            <p id="alumnos-presentes" class="verde"></p>
+            <p id="alumnos-ausentes" class="rojo"></p>
+            <p id="alumnos-licencia" class="azul"></p>
+        </div>
+    </div>
+
+
+
+    <script src="componentes/modal.js"></script>
+    <script src="componentes/Estudiantes.js"></script>
+    <script src="componentes/guardado.js"></script>
+</body>
+</html>

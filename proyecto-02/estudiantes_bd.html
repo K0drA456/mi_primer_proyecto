@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes Base de Datos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header-bd">
+        <h1>Lista de Estudiantes</h1>
+        <div class="box">
+            <div class="maestro">
+                <h2>Curso: Base de datos</h2>
+                <h2>Docente: Lic. Carlos</h2>
+                <div class="help"><a href="index.html" class="buton">Volver a cursos</a></div>
+            </div>
+        </div>
+        <div class="estudiantes-container">
+            <estudiante-card nombre="Jorge Montaño" edad="21" imagen="img/estudiante.png"></estudiante-card>
+            <estudiante-card nombre="Maria Rodriguez" edad="22" imagen="img/mujer-joven.png"></estudiante-card>
+
+            <estudiante-card nombre="Juan Roca" edad="23" imagen="img/nino.png"></estudiante-card>
+            <estudiante-card nombre="Nayeli Villa" edad="18" imagen="img/nina.png"></estudiante-card>
+
+            <estudiante-card nombre="Luis Canaviri" edad="18" imagen="img/patinador.png"></estudiante-card>
+            <estudiante-card nombre="Melany Gutierrez" edad="20" imagen="img/nina (4).png"></estudiante-card>
+
+            <estudiante-card nombre="Lucas Suarez" edad="23" imagen="img/hombre-joven.png"></estudiante-card>
+            <estudiante-card nombre="Soledad Ortizo" edad="25" imagen="img/nina (3).png"></estudiante-card>
+
+            <estudiante-card nombre="Pablo Silva" edad="20" imagen="img/estudiante.png"></estudiante-card>
+            <estudiante-card nombre="Michel Rios" edad="21" imagen="img/nina (2).png"></estudiante-card>
+
+            <estudiante-card nombre="Edson Castellón" edad="24" imagen="img/chico (1).png"></estudiante-card>
+            <estudiante-card nombre="Cielo Lopez" edad="18" imagen="img/nina (1).png"></estudiante-card>
+        </div>
+
+        <div class="buttons-container">
+            <button id="guardar-btn">Guardar</button>
+            <button id="editar-btn" style="display: none;">Editar</button>
+        </div>
+    </div>
+
+
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="new">Resumen de Asistencia</h2>
+            <p id="total-alumnos"></p>
+            <p id="alumnos-presentes" class="verde"></p>
+            <p id="alumnos-ausentes" class="rojo"></p>
+            <p id="alumnos-licencia" class="azul"></p>
+        </div>
+    </div>
+
+
+
+    <script src="componentes/modal.js"></script>
+    <script src="componentes/Estudiantes.js"></script>
+    <script src="componentes/guardado.js"></script>
+</body>
+</html>

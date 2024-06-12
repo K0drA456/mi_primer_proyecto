@@ -1,0 +1,188 @@
+/* Estilos globales */
+/* *{
+    border: 1px red solid;
+} */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1, h2{
+    color: white;
+    text-shadow: 3px 3px 3px rgb(209, 134, 36);
+}
+h1{
+    text-align: center;
+    font-size: 46px;
+}
+.new{
+    color: black;
+    text-shadow: none;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.materia-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.estudiantes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box, .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+.header-tallerweb{
+    background: url(../img/mesa-tabla-madera-vacia-fondo-desenfocado-imagen-exuberante_31965-213364.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+}
+.header-poo{
+    background: url(../img/mesa-madera-bosque-borroso-fondo_662214-425695.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+}
+.header-bd{
+    background: url(../img/modelo-podio-producto-tronco-madera-fondo-temas-otono_894279-3936.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+}
+.header-index{
+    background: url(../img/jarron-ceramica-sobre-mesa-ramo-flores-sombras-sobre-fondo-pared-marron-claro-o-beige-decoracion-sobre-mesa-espacio-copia-diseno-interior-estetico-minimalista_121837-11360.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+    height: 800px;
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+.help{
+    display: flex;
+    justify-content: center;
+}
+.buton{
+    background-color:rgb(209, 151, 75);
+    border-radius: 25px;
+    padding: 10px 30px;
+    color: white;
+    display: inline-block;
+    transition: background-color 0.3s;
+    margin: 20px 0;
+}
+.buton:hover{
+    background-color: white;
+    color: rgb(209, 151, 75);
+}
+
+
+
+
+
+.buttons-container {
+    text-align: center;
+    margin-top: 30px;
+}
+#guardar-btn, #editar-btn {
+    padding: 10px 60px;
+    font-size: 16px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#guardar-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#guardar-btn:hover {
+    background-color: #45a049;
+}
+
+#editar-btn {
+    background-color: #008CBA;
+    color: white;
+}
+
+#editar-btn:hover {
+    background-color: #007bb5;
+}
+
+
+.rojo{
+    color: rgb(245, 56, 56);
+}
+.verde{
+    color: rgb(9, 104, 9);
+}
+.azul{
+    color: rgb(24, 24, 160);
+}
+
+
+
+
+/* Estilos para el modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: white;
+    margin: 220px auto;
+    padding: 20px;
+    border: 1px solid yellow;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 1px 1px 30px yellow;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
